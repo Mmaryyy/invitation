@@ -1,0 +1,35 @@
+@import url(fonts.css);
+:root {
+  /* font */
+  --font-somi: "Somi";
+  --font-pretendard: "Pretendard-Regular";
+  --font-gowunBatang: "Gowun Batang", serif;
+  --font-gowunDodum: "GowunDodum-Regular";
+
+  /* font-size */
+  --fz-xs: 14px;
+  --fz-base: 16px;
+  --fz-md: 18px;
+  --fz-lg: 20px;
+  --fz-big: 24px;
+
+  /* font-weight */
+  --fw-base: 400;
+  --fw-bold: 700;
+
+  /* color */
+  --ivory_100: #fefae0;
+  --ivory_200: #faedcd;
+  --beige: #e3caa5;
+  --brown_100: #ceab93;
+  --brown_200: #ad8b73;
+
+  --green_100: #e9edc9;
+  --green_200: #ccd5ae;
+  --green_300: #557153;
+
+  --black_100: #e7e7e7;
+  --black_100: #bdbdbd;
+  --black_100: #414141;
+  --modalBack: rgba(34, 34, 34, 0.2);
+}
