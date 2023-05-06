@@ -61,5 +61,6 @@ export const BaseButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
+  box-shadow: 0 0 0.25em rgba(67, 71, 85, 0.27),
+    2px 0.25em 24px 0 rgba(90, 125, 188, 0.05);
 `

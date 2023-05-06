@@ -18,7 +18,7 @@
   --fw-bold: 700;
 
   /* color */
-  --ivory_100: #fefae0;
+  --ivory_100: #f9f3e6;
   --ivory_200: #faedcd;
   --beige: #e3caa5;
   --brown_100: #ceab93;
@@ -29,7 +29,7 @@
   --green_300: #557153;
 
   --black_100: #e7e7e7;
-  --black_200: #bdbdbd;
+  --black_200: #808080;
   --black_300: #414141;
   --modalBack: rgba(34, 34, 34, 0.2);
 }
