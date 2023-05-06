@@ -1,27 +1,10 @@
 import styled from 'styled-components'
 import './variable.css'
 
-//Layout
+// Layout
 export const OuterWrapper = styled.div`
   width: 100%;
   position: relative;
-`
-
-export const LadingImg = styled.img`
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-`
-
-export const InfoWrapper = styled.div`
-  width: 100%;
-  height: 100vh;
-  color: white;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 `
 
 export const InnerWrapper = styled.main`
@@ -33,13 +16,13 @@ export const InnerWrapper = styled.main`
   flex-direction: column;
   align-items: center;
 `
+
 export const ContentContainer = styled.div`
   width: 100%;
 `
 export const Text = styled.p`
   text-align: center;
 `
-
 export const Title = styled.p`
   text-align: center;
   font-size: var(--fz-big);
@@ -52,18 +35,6 @@ export const Strong = styled.span`
   font-size: var(--fz-lg);
 `
 
-export const InvitationWrapper = styled.div`
-  width: 100%;
-  padding-bottom: 30px;
-`
-
-export const FamilyWrapper = styled.div`
-  width: 100%;
-  padding: 30px 0;
-  border-top: 3px dotted var(--green_200);
-  border-bottom: 3px dotted var(--green_200);
-`
-
 export const LogoWrapper = styled.img`
   width: 70%;
   margin-bottom: 50px;
@@ -74,19 +45,21 @@ export const Icon = styled.img`
   height: 25px;
 `
 
-export const PhotoContainer = styled.div`
-  width: 100%;
-  /* margin-bottom: 30px; */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  /* grid-auto-rows: 100%; */
-  padding-bottom: 30px;
-  border-bottom: 3px dotted var(--green_200);
-`
-
 export const GiftContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`
+
+export const BaseButton = styled.div`
+  width: 100%;
+  height: 40px;
+  background: var(--brown_100);
+  color: white;
+  font-weight: var(--fw-bold);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
 `

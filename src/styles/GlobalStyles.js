@@ -30,7 +30,7 @@ export const GlobalStyle = createGlobalStyle`
   input:-webkit-autofill:focus, 
   input:-webkit-autofill:active {
     background: transparent; background-clip: text; -webkit-background-clip: text;
-    -webkit-text-fill-color: var(--black-300);
+    -webkit-text-fill-color: var(--black_300);
   }
   textarea {
     resize: none;
@@ -65,7 +65,7 @@ export const GlobalStyle = createGlobalStyle`
     'Noto Sans KR', 
     'Malgun Gothic', sans-serif;
     font-size: var(--fz-base);
-    color: var(--black-300);
+    color: var(--black_300);
     ;
   }
 `
