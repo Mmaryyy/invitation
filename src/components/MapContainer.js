@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   height: 250px;
   margin: 20px 0;
 `
-export const MapContainer = () => {
+const MapContainer = () => {
   const Lat = 33.450701
   const Lng = 126.570667
   useEffect(() => {
@@ -16,7 +16,7 @@ export const MapContainer = () => {
 
     const options = {
       center: new kakao.maps.LatLng(Lat, Lng),
-      level: 3,
+      level: 4,
     }
     const map = new kakao.maps.Map(container, options)
     const markerPosition = new kakao.maps.LatLng(Lat, Lng)
@@ -36,6 +36,10 @@ export const MapContainer = () => {
       image: markerImg,
     })
     marker.setMap(map)
+    map.setDraggable(false)
+    map.setZoomable(false)
   }, [])
   return <Wrapper id="map"></Wrapper>
 }
+
+export default MapContainer
