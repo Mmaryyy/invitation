@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import './variable.css'
+import { Link } from 'react-router-dom'
 
 // Layout
 export const OuterWrapper = styled.div`
@@ -51,7 +52,7 @@ export const GiftContainer = styled.div`
   align-items: center;
 `
 
-export const BaseButton = styled.div`
+export const BaseButton = styled(Link)`
   width: 100%;
   height: 40px;
   background: var(--brown_100);

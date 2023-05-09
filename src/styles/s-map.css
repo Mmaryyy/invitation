@@ -1,6 +1,6 @@
 .wrapper {
   background: var(--ivory_100);
-  width: 150px;
+  width: 130px;
   height: 110px;
   border-radius: 5px;
   font-size: var(--fz-base);
@@ -31,6 +31,7 @@ p.sub {
 
 .address {
   padding: 5px 5px;
+  font-size: var(--fz-xs);
 }
 
 .img_container {
