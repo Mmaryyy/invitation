@@ -5,7 +5,7 @@ import './../styles/s-map.css'
 const { kakao } = window
 
 const Wrapper = styled.div`
-  width: calc(100vw - 30px);
+  width: calc(100% - 30px);
   height: 250px;
   margin: 20px 0;
 `
