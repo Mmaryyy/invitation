@@ -8,6 +8,9 @@ const Contact = () => {
       <div className="groom">
         <p>재성에게 연락하기</p>
       </div>
+      <div className="bride">
+        <p>혜인에게 연락하기</p>
+      </div>
     </PageWrapper>
   )
 }

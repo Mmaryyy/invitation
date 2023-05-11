@@ -28,14 +28,6 @@ function App() {
         <Gallery />
         <WeddingInfo />
         <Contact />
-        <div className="contact">
-          <div className="groom">
-            <p>재성에게 연락하기</p>
-          </div>
-          <div className="bride">
-            <p>혜인에게 연락하기</p>
-          </div>
-        </div>
         <GiftContainer className="gift">
           <button className="kakaopay">축의금 송금하기</button>
           <button className="groom_modal">신랑측 계좌번호</button>

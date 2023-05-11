@@ -6,11 +6,14 @@ import { Link } from 'react-router-dom'
 export const OuterWrapper = styled.div`
   width: 100%;
   position: relative;
+  display: flex;
+  justify-content: center;
 `
 
 export const InnerWrapper = styled.main`
   position: absolute;
   width: 100%;
+  max-width: 768px;
   top: calc(100% + 100vh);
   padding: 0px 15px 50px 15px;
   display: flex;
