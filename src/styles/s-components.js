@@ -12,14 +12,19 @@ export const InnerWrapper = styled.main`
   position: absolute;
   width: 100%;
   top: calc(100% + 100vh);
-  padding: 50px 15px;
+  padding: 0px 15px 50px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
 `
-
-export const ContentContainer = styled.div`
+export const PageWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
 `
 export const Text = styled.p`
   text-align: center;
@@ -38,7 +43,6 @@ export const Strong = styled.span`
 
 export const LogoWrapper = styled.img`
   width: 70%;
-  margin-bottom: 50px;
 `
 
 export const Icon = styled.img`
@@ -64,4 +68,7 @@ export const BaseButton = styled(Link)`
   align-items: center;
   box-shadow: 0 0 0.25em rgba(67, 71, 85, 0.27),
     2px 0.25em 24px 0 rgba(90, 125, 188, 0.05);
+  &:visited {
+    color: white;
+  }
 `
