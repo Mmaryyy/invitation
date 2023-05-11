@@ -1,11 +1,10 @@
-/* eslint-disable */
 import React from 'react'
 import './styles/variable.css'
 import { GlobalStyle } from './styles/GlobalStyles'
 import {
   OuterWrapper,
   InnerWrapper,
-  ContentContainer,
+  PageWrapper,
   LogoWrapper,
   GiftContainer,
 } from './styles/s-components'
@@ -14,20 +13,21 @@ import InvitationContent from './pages/InvitationContent'
 import Family from './pages/Family'
 import Gallery from './pages/Gallery'
 import WeddingInfo from './pages/WeddingInfo'
-
+import Contact from './pages/Contact'
 function App() {
   return (
     <OuterWrapper className="App">
       <GlobalStyle />
       <LandingImg />
       <InnerWrapper className="inner">
-        <LogoWrapper src="assets/logo.png" alt="결혼합니다" />
-        <ContentContainer className="invitation">
+        <PageWrapper className="first_page_wrapper">
+          <LogoWrapper src="assets/logo.png" alt="결혼합니다" />
           <InvitationContent />
           <Family />
-        </ContentContainer>
+        </PageWrapper>
         <Gallery />
         <WeddingInfo />
+        <Contact />
         <div className="contact">
           <div className="groom">
             <p>재성에게 연락하기</p>
