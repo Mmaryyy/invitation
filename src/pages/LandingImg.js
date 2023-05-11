@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { Strong } from '../styles/s-components'
 const ImgWrapper = styled.img`
   width: 100%;
   height: 100vh;
@@ -18,14 +20,44 @@ const InfoWrapper = styled.div`
 `
 
 const LandingImg = () => {
+  useEffect(() => {
+    Aos.init()
+  }, [])
   return (
     <div className="landing_container">
       <ImgWrapper src="assets/example.png" alt="landing_page" />
       <InfoWrapper>
-        <p>배재성 그리고 이혜인</p>
-        <p>2023년 10월 14일</p>
-        <p>12시</p>
-        <p>결혼식 장소</p>
+        <p
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          data-aos-easing="ease-in-out"
+        >
+          <Strong>배재성 그리고 이혜인</Strong>
+        </p>
+        <p
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          data-aos-delay="500"
+          data-aos-easing="ease-in-out"
+        >
+          2023년 10월 14일
+        </p>
+        <p
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          data-aos-delay="1000"
+          data-aos-easing="ease-in-out"
+        >
+          오후 12시
+        </p>
+        <p
+          data-aos="fade-down"
+          data-aos-duration="1500"
+          data-aos-delay="2000"
+          data-aos-easing="ease-in-out"
+        >
+          광주 서구 회재유통길 24, <Strong>Cafe Aria</Strong>
+        </p>
       </InfoWrapper>
     </div>
   )
