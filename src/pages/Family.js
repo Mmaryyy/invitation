@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Text, Strong, Icon } from '../styles/s-components'
+
 const FamilyWrapper = styled.div`
   width: 100%;
-  padding: 30px 0;
-  border-top: 3px dotted var(--green_200);
-  border-bottom: 3px dotted var(--green_200);
+  padding: 20px 0;
+  background: var(--green_200);
+  outline: 3px dashed var(--green_200);
+  line-height: 2;
 `
 const Family = () => {
   return (
