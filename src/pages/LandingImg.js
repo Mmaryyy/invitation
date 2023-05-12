@@ -5,15 +5,19 @@ import 'aos/dist/aos.css'
 import { Strong } from '../styles/s-components'
 const Wrapper = styled.div`
   position: absolute;
+  width: 100%;
+  height: 100vh;
 `
 const ImgWrapper = styled.img`
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
   position: relative;
 `
 const InfoWrapper = styled.div`
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
   color: white;
   position: absolute;
   top: 0;
