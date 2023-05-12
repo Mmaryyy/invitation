@@ -1,7 +1,6 @@
 .wrapper {
   background: var(--ivory_100);
   width: 130px;
-  height: 110px;
   border-radius: 5px;
   font-size: var(--fz-base);
   box-shadow: 0 0 0.25em rgba(67, 71, 85, 0.27),
@@ -35,18 +34,19 @@ p.sub {
 }
 
 .img_container {
-  position: relative;
   padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 img.cat {
-  width: 25px;
+  width: 40px;
   height: auto;
 }
 
 img.wedding {
   width: 50px;
   height: auto;
-  position: absolute;
   right: 5px;
   bottom: 0;
 }
