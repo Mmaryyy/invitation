@@ -1,9 +1,9 @@
 import React from 'react'
-import { PageWrapper, Title } from '../styles/s-components'
+import { Title } from '../styles/s-components'
 
 const Contact = () => {
   return (
-    <PageWrapper>
+    <div className="contact">
       <Title>C o n t a c t</Title>
       <div className="groom">
         <p>재성에게 연락하기</p>
@@ -11,7 +11,7 @@ const Contact = () => {
       <div className="bride">
         <p>혜인에게 연락하기</p>
       </div>
-    </PageWrapper>
+    </div>
   )
 }
 

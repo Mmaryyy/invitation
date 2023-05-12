@@ -15,7 +15,7 @@ export const InnerWrapper = styled.main`
   width: 100%;
   max-width: 768px;
   top: calc(100% + 100vh);
-  padding: 0px 15px 50px 15px;
+  padding: 50px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,7 +36,7 @@ export const Title = styled.p`
   text-align: center;
   font-size: var(--fz-big);
   font-weight: var(--fw-bold);
-  margin: 30px 0;
+  margin: 100px 0;
   color: var(--green_300);
 `
 

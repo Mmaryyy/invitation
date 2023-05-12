@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { PageWrapper, Title, BaseButton, Strong } from '../styles/s-components'
+import { Title, BaseButton, Strong } from '../styles/s-components'
 import MapContainer from '../components/MapContainer'
 
 const Calendar = styled.img`
@@ -22,7 +22,7 @@ const WeddingInfo = () => {
   const Lng = 126.84855151562665
 
   return (
-    <PageWrapper className="info">
+    <div className="wedding_info">
       <Title>W e d d i n g</Title>
       <Calendar src="/assets/date.png" alt="date" className="date" />
       <TextContainer className="text_container">
@@ -39,7 +39,7 @@ const WeddingInfo = () => {
       >
         지도 바로가기
       </BaseButton>
-    </PageWrapper>
+    </div>
   )
 }
 

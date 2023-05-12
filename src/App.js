@@ -4,7 +4,6 @@ import { GlobalStyle } from './styles/GlobalStyles'
 import {
   OuterWrapper,
   InnerWrapper,
-  PageWrapper,
   LogoWrapper,
   GiftContainer,
 } from './styles/s-components'
@@ -20,11 +19,9 @@ function App() {
       <GlobalStyle />
       <LandingImg />
       <InnerWrapper className="inner">
-        <PageWrapper className="first_page_wrapper">
-          <LogoWrapper src="assets/logo.png" alt="결혼합니다" />
-          <InvitationContent />
-          <Family />
-        </PageWrapper>
+        <LogoWrapper src="assets/logo.png" alt="결혼합니다" />
+        <InvitationContent />
+        <Family />
         <Gallery />
         <WeddingInfo />
         <Contact />

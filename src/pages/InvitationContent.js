@@ -5,6 +5,7 @@ import { Text } from '../styles/s-components'
 const InvitationWrapper = styled.div`
   width: 100%;
   line-height: 2;
+  padding: 80px 0;
 `
 
 const InvitationContent = () => {
