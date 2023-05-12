@@ -14,20 +14,11 @@ export const InnerWrapper = styled.main`
   position: absolute;
   width: 100%;
   max-width: 768px;
-  top: calc(100% + 100vh);
+  top: calc(100% + calc(var(--vh, 1vh) * 100));
   padding: 50px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
-`
-export const PageWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
-  align-items: center;
-  justify-content: space-between;
-  padding: 50px 0;
 `
 export const Text = styled.p`
   text-align: center;
