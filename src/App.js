@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './styles/variable.css'
 import { GlobalStyle } from './styles/GlobalStyles'
 import {
@@ -14,6 +14,10 @@ import Gallery from './pages/Gallery'
 import WeddingInfo from './pages/WeddingInfo'
 import Contact from './pages/Contact'
 function App() {
+  const vh = window.innerHeight * 0.01
+  useEffect(() => {
+    document.documentElement.style.setProperty('--vh', `${vh}px`)
+  }, [])
   return (
     <OuterWrapper className="App">
       <GlobalStyle />

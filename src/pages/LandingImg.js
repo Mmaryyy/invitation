@@ -6,7 +6,8 @@ import { Strong } from '../styles/s-components'
 const Wrapper = styled.div`
   position: absolute;
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  height: calc(var(--vh, 1vh) * 100);
 `
 const ImgWrapper = styled.img`
   width: 100%;
