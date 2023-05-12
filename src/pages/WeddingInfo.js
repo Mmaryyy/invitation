@@ -3,33 +3,30 @@ import styled from 'styled-components'
 import { Title, BaseButton, Strong } from '../styles/s-components'
 import MapContainer from '../components/MapContainer'
 
+const WeddingWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2;
+`
 const Calendar = styled.img`
   width: 60%;
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 `
-const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  line-height: 2;
-  > p,
-  span {
-    text-align: center;
-  }
-`
+
 const WeddingInfo = () => {
   const Lat = 35.11256707412654
   const Lng = 126.84855151562665
 
   return (
-    <div className="wedding_info">
+    <WeddingWrapper className="wedding_info">
       <Title>W e d d i n g</Title>
       <Calendar src="/assets/date.png" alt="date" className="date" />
-      <TextContainer className="text_container">
-        <p>2023년 10월 14일 오후 12시</p>
-        <p>광주 서구 회재유통길 24 (매월동 475-6)</p>
-        <Strong>카페 아리아</Strong>
-      </TextContainer>
+      <p>2023년 10월 14일 오후 12시</p>
+      <p>광주 서구 회재유통길 24 (매월동 475-6)</p>
+      <Strong>카페 아리아</Strong>
       <p>주차 안내</p>
       <p>오시는 길</p>
       <MapContainer />
@@ -39,7 +36,7 @@ const WeddingInfo = () => {
       >
         지도 바로가기
       </BaseButton>
-    </div>
+    </WeddingWrapper>
   )
 }
 
