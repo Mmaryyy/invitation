@@ -6,6 +6,7 @@ import { Strong } from '../styles/s-components'
 const Wrapper = styled.div`
   position: absolute;
   width: 100%;
+  max-width: 768px;
   /* height: 100vh; */
   height: calc(var(--vh, 1vh) * 100);
 `
